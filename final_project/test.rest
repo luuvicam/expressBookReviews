@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:5001
+@isbn = 1
+@author = Unknown
+@title = The Epic Of Gilgamesh
+
+### Task 1
+GET {{baseUrl}}
+
+### Task 2
+GET {{baseUrl}}/isbn/{{isbn}}
+
+### Task 3
+GET {{baseUrl}}/author/{{author}}
+
+### Task 4
+GET {{baseUrl}}/title/{{title}}
+
+### Task 5
+GET {{baseUrl}}/review/1
+
+### Task 6
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "username": "luuvicam",
+    "password": "luuvicam"
+}
+
+### Task 7
+POST {{baseUrl}}/customer/login
+Content-Type: application/json
+
+{
+    "username": "luuvicam",
+    "password": "luuvicam"
+}
+
+### Task 8
+PUT {{baseUrl}}/customer/auth/review/{{isbn}}
+Content-Type: application/json
+
+{
+    "review": "This is good book update"
+}
+
+### Task 9
+DELETE {{baseUrl}}/customer/auth/review/{{isbn}}
