@@ -16,7 +16,7 @@ GET {{baseUrl}}/author/{{author}}
 GET {{baseUrl}}/title/{{title}}
 
 ### Task 5
-GET {{baseUrl}}/review/1
+GET {{baseUrl}}/review/{{isbn}}
 
 ### Task 6
 POST {{baseUrl}}/register
